@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --Very-dark-blue: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);
+    --Soft-violet: hsl(277, 64%, 61%);
+    --White: hsl(0, 0%, 100%);
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+    --fs-15: 15px;
+    --fw-inter400: 400;
+    --fw-inter700: 700;
+    --fw-lexend400: 400;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", serif;
+    font-family: "Lexend Deca", serif;
+    background-color: var(--Very-dark-blue);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+body main{
+    border-radius: 10px;
+}
+body main figure img{
+    border-radius: 0px 10px 10px 0px;
+}
+body main figure span{
+    content: "";
+    display: block;
+    width: 33.8rem;
+    height: 28rem;
+    position: absolute;
+    background-color: var(--Soft-violet);
+    border-radius: 0px 10px 10px 0px;
+    opacity: 0.5;
+}
+
+body main .card-component{
+    display: flex;
+    flex-direction: row;
+}
+body main .card-component .card-left-side{
+    padding: 4rem;
+    background-color: var(--Dark-desaturated-blue);
+    border-radius: 15px 0px 0px 15px;
+    height: 27.9rem;
+}
+body main .card-component .card-left-side .container{
+    display: grid;
+    gap: 25px;
+}
+body main .card-component .card-left-side .card-title{
+    color: var(--White);
+    font-size: 35px;
+    font-family: "Inter", serif;
+    width: 25rem;
+}
+body main .card-component .card-left-side .card-title span{
+    color: var(--Soft-violet);
+}
+body main .card-component .card-left-side .card-description{
+    color: var(--Slightly-transparent-white);
+    font-size: var(--fs-15);
+    width: 23rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    font-family: "Inter", serif;
+    position: relative;
+    margin-bottom: 30px;
+}
+body main .card-component .card-left-side .card-info{
+    display: flex;
+    justify-content: space-between;
+    width: 22rem;
+}
+body main .card-component .card-left-side .card-info .card-stat .number{
+    font-family: "Inter", serif;
+    color: var(--White);
+    font-weight: var(--fw-inter700);
+    font-size: 25px;
+    margin-bottom: 3px;
+}
+body main .card-component .card-left-side .card-info .card-stat .n{
+    color: var(--Slightly-transparent-white);
+    text-transform:uppercase;
+    font-weight: 200;
+    font-size: 13px;
+}
+@media only screen and (max-width: 1100px) {
+    body main,
+    body main figure img{
+        width: 20rem;
+        border-radius: 15px 15px 0px 0px;
+    }
+    body main figure span{
+        width: 20rem;
+        height: 15.5rem;
+        background-color: var(--Soft-violet);
+        border-radius: 15px 15px 0px 0px;
+    }
+    body main .card-component{
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    body main .card-component .card-left-side{
+        text-align: center;
+        width: 20rem;
+        height: 33rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0px 0px 15px 15px;
+        position: relative;
+        bottom: 20px;
+    }
+    body main .card-component .card-left-side .container{
+        display: grid;
+        place-items: center;
+        gap: 10px;
+        position: relative;
+        bottom: 30px;
+    }
+    body main .card-component .card-left-side .card-title{
+        font-size: 25px;
+        width: 15rem;
+    }
+    body main .card-component .card-left-side .card-description{
+        width: 15rem;
+    }
+    body main .card-component .card-left-side .card-info{
+        display: flex;
+        flex-direction: column;
+        height: 11rem;
+    }
+  }
